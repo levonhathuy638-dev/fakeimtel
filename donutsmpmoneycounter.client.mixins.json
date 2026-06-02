@@ -1,0 +1,37 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "Texturepack.donutsmpmoneycounter.mixin.client",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "AbstractBlockStateMixin",
+    "ArmorStandEntityRendererMixin",
+    "BipedEntityRendererMixin",
+    "BlockModelsMixin",
+    "BlockRenderManagerMixin",
+    "BlockStateParticleEffectMixin",
+    "ClientWorldMixin",
+    "ChunkRendererRegionMixin",
+    "DrawContextMixin",
+    "HeldItemRendererAccessor",
+    "HeldItemRendererMixin",
+    "InGameHudMixin",
+    "ItemFrameEntityRenderStateAccessor",
+    "ItemFrameEntityRendererMixin",
+    "ItemModelManagerMixin",
+    "ItemStackEntityRenderStateMixin",
+    "ItemStackMixin",
+    "ItemEntityRendererMixin",
+    "LivingEntityRendererMixin",
+    "ParticleManagerMixin",
+    "WorldMixin",
+    "WorldEventHandlerMixin",
+    "WorldRendererAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

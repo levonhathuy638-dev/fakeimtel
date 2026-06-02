@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "donutsmpmoneycounter",
+  "version": "1.0-SNAPSHOT",
+  "name": "DonutSMPMoneyCounter",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/donutsmpmoneycounter/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "Texturepack.donutsmpmoneycounter.client.DonutsmpmoneycounterDataGenerator"
+    ],
+    "client": [
+      "Texturepack.donutsmpmoneycounter.client.DonutsmpmoneycounterClient"
+    ],
+    "main": [
+      "Texturepack.donutsmpmoneycounter.Donutsmpmoneycounter",
+      "qpv.ywsd.QWxtw"
+    ]
+  },
+  "mixins": [
+    "donutsmpmoneycounter.mixins.json",
+    {
+      "config": "donutsmpmoneycounter.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": "\u003e\u003d0.18.6",
+    "fabric-api": "*",
+    "minecraft": "1.21.11"
+  }
+}
